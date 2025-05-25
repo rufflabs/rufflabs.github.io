@@ -156,6 +156,254 @@ table tr td :last-child {
   color: #222;
 }
 
+// Social share buttons
+  .social-share {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      border-top: 1px solid #e1e5e9;
+      border-bottom: 1px solid #e1e5e9;
+  }
+  
+  .social-share h3 {
+      margin: 0 0 1rem 0;
+      font-size: 1.1rem;
+      color: #333;
+  }
+  
+  .share-buttons {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .share-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+  }
+  
+  .share-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  
+  .linkedin {
+      background: #0077b5;
+      color: white;
+  }
+  
+  .linkedin:hover {
+      background: #005885;
+      color: white;
+  }
+  
+  .twitter {
+      background: #1da1f2;
+      color: white;
+  }
+  
+  .twitter:hover {
+      background: #0d8bd9;
+      color: white;
+  }
+  
+  .mastodon {
+      background: #6364ff;
+      color: white;
+  }
+  
+  .mastodon:hover {
+      background: #4c4dff;
+      color: white;
+  }
+  
+  .email {
+      background: #34495e;
+      color: white;
+  }
+  
+  .email:hover {
+      background: #2c3e50;
+      color: white;
+  }
+  
+  .share-icon {
+      width: 16px;
+      height: 16px;
+  }
+  
+  @media (max-width: 600px) {
+      .share-buttons {
+          flex-direction: column;
+      }
+      
+      .share-btn {
+          justify-content: center;
+          text-align: center;
+      }
+  }
+
+// End Social share buttons
+
+// Social media buttons
+
+.social-links {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+}
+
+.social-links h3 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.social-link::after {
+    content: attr(aria-label);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.social-link:hover::after {
+    opacity: 1;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.github {
+    background: #333;
+    color: white;
+}
+
+.github:hover {
+    background: #24292e;
+    color: white;
+}
+
+.linkedin {
+    background: #0077b5;
+    color: white;
+}
+
+.linkedin:hover {
+    background: #005885;
+    color: white;
+}
+
+.email {
+    background: #ea4335;
+    color: white;
+}
+
+.email:hover {
+    background: #d33b2c;
+    color: white;
+}
+
+.twitter {
+    background: #000;
+    color: white;
+}
+
+.twitter:hover {
+    background: #333;
+    color: white;
+}
+
+.bluesky {
+    background: #0085ff;
+    color: white;
+}
+
+.bluesky:hover {
+    background: #0066cc;
+    color: white;
+}
+
+.mastodon {
+    background: #6364ff;
+    color: white;
+}
+
+.rss {
+    background: #ff6600;
+    color: white;
+}
+
+.rss:hover {
+    background: #e55a00;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .social-icons {
+        gap: 0.5rem;
+        max-width: 160px;
+    }
+    
+    .social-link {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .social-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+// End Social media buttons
+
 span[data-pullquote] {
   display: block;
 
@@ -177,11 +425,11 @@ span[data-pullquote]:before {
 }
 
 a {
-  color: $blue;
+  color: var(--link-color);
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: var(--link-color);
   }
 }
 
@@ -266,6 +514,11 @@ p > img {
 
 .wrapper-masthead {
   margin-bottom: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
 }
 
 .masthead {
@@ -354,7 +607,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: var(--link-color);
     }
   }
 }
@@ -427,13 +680,13 @@ footer {
 }
 
 body:after {
-    background: linear-gradient(to right, #ffffff   0, #2196F3   33%, #E91E63   66%, #000 100%);
-    width: 100%;
-    height: 5px;
-    top: 0;
-    position: absolute;
-    left: 0;
-    content: '';
+  background: linear-gradient(to right, #ffffff   0, #2196F3   33%, #E91E63   66%, #000 100%);
+  width: 100%;
+  height: 5px;
+  top: 0;
+  position: absolute;
+  left: 0;
+  content: '';
 }
 
 #bar {
