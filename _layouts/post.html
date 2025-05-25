@@ -4,7 +4,12 @@ layout: default
 
 <article class="post detailed">
   <h1>{{ page.title }}</h1>
-
+  <div>
+    <p class="post_image">
+      {% if page.image %}
+        <img src="{{ page.image | prepend: site.baseurl }}" alt="{{ page.title }}">
+      {% endif %}
+  </div>
   <div>
     <p class="author_title">{{site.author}}  ·  {{ page.date | date: "%B %e, %Y" }}</p>
     {% if page.last_modified_at %}
