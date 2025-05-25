@@ -26,15 +26,15 @@ footer-links:
   flickr:
   github: rufflabs
   instagram:
-  linkedin: taylorjason
+  linkedin: taylor-jason
   pinterest:
   rss: rss
-  twitter: ruff_labs
+  twitter: _rufflabs
   stackoverflow: 
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
   playconsole:
-  mastodon: # <your-mastodon-instance>/@<your-user-name> eg. fosstodon.org/@username
+  mastodon: infosec.exchange/@rufflabs
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
