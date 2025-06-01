@@ -32,9 +32,11 @@ My portable soldering kit consists of the following:
 
 ## Inventory
 Starting off we have the pencil case that contains everything above. I tried out various cases, some hard shell and some soft, but this one ended up having the perfect amount of elastic loops, pockets, and larger zippered areas. It holds everything I need except the power bank. Even then, I am pretty sure if I re-arranged or didn't use the magnifier glasses I could just shove the bank in the main compartment. 
-![Vocuer pencil case](/images/posts/soldering-kit/PencilCase.png)
+![Vocuer pencil case](/images/posts/soldering-kit/Assembled.jpeg)
 
-For my soldering iron I use a Pinecil v2. The first soldering iron I ever used was a Weller that work paid for, and that thing was amazing. Sadly I couldn't afford that when I wanted a soldering iron at home and went with a cheap knock-off from aliexpress. I never soldered well and didn't do much. I decided to buy the Pinecil as I needed a new iron and it was very affordable and had great reviews. I love this iron, it's super easy to use, fast to startup, and extremely portable. 
+For my soldering iron I use a Pinecil v2. The first soldering iron I ever used was a Weller that work paid for, and that thing was amazing. Sadly I couldn't afford that when I wanted a soldering iron at home and went with a cheap knock-off from aliexpress. I never soldered well and didn't do much. I decided to buy the Pinecil as I needed a new iron and it was very affordable and had great reviews. I love this iron, it's super easy to use, fast to startup, and extremely portable.
+
+![](/images/posts/soldering-kit/CaseBottom.jpeg)
 
 I coupled the Pinecil with Pine64's silicon USB-C cable, which makes it resistant to melting in case the iron sets down on it or is briefly touched. This cable feels amazing, it's super flexible and looks great. 
 
@@ -43,15 +45,23 @@ For powering the Pinecil I have an Anker PowerCore 24K. This is a Power Delivery
 My workstation while soldering is the Omnifixo OF-M. This is a beautiful set of helping hands clips that are magnetic and very compact. Bonus points for transferring power via the clips so you can actually power up the baseplate with an alligator clip and turn a device on and off by moving a clip. Check out their website for a demo video of that in action.
 
 When I purchased my Omnifixo it didn't come with the field case, so I had to hunt for my own. I found the amazing Etsy seller OwlFabricationStore that was selling a Omnifixo and Pinecil case. This case adds a solder spool, aluminium stand, a spot for some cleaning pads or wool, and a place to put everything including the Pinecil. It uses the Omnifixo build plate as the lid. Everything is nicely magnetized securely together. Even with the Omnifixo field box I would still choose this option. Every millimeter of space is well utilized and expertly designed. 
-![Omnifixo workstation](/images/posts/soldering-kit/OmnifixoWorkstation.png)
+![Omnifixo workstation](/images/posts/soldering-kit/OmnifixoWorkstation.jpg)
 
 I have two options to help improve my visibility while soldering. First is a pair of magnifying glasses that go on like regular glasses and includes a little light. These are what I usually use, although they are prtty bulky and take up the entire center area of the case. My second option is a MagSafe phone stand that lets me use the Magnifier app on my iPhone for up close work. It takes some getting used to, but is very doable. The MagSafe securely holds the phone in place and the articulating arm lets me move it wherever I need it. 
 
-To round out the kit I have a plethora of consumables. Rubbing alcohol is in a tiny little eyeglass spritz bottle I got as swag from some vendor once. It's smaller than normal and about the size of a marker. It fits perfectly in the loops of the case. I also keep some cotton swabs to help clean off flux and components. Speaking of flux, I have a small flux pen to help add flux when needed to remove or resolder components.
+![](/images/posts/soldering-kit/CaseCenter.jpeg)
+
+![](/images/posts/soldering-kit/iPhone.jpeg)
+
+To round out the kit I have a plethora of consumables. Rubbing alcohol is in a tiny little eyeglass spritz bottle I got as swag from some vendor once. It's smaller than normal and about the size of a marker. It fits perfectly in the loops of the case. I also keep some cotton swabs to help clean off flux and components. Speaking of flux, I have a small flux pen to help add flux when needed to remove or resolder components. I also have a spare set of soldering tips for the Pinecil.
+
+![](/images/posts/soldering-kit/CaseLeft.jpeg)
 
 I have the classic Engineer solder sucker that everyone recommends. I also recommend it. I have had a couple different cheap versions but this one is fantastic. Great build quality and fits perfectly in the case. I also keep a little roll of solder wick that I forgot to take a picture of, it's tucked away next to the USB-C cable in a little pocket.
 
 For moving components around I have a small plastic spudger that I bought in bulk, and a pair of ceramic tweezers. I kept bending and breaking cheap metal tweezers so decided to go with the ceramic ones as they have replaceable tips if I ever do break them. I haven't yet, thankfully. 
+
+![](/images/posts/soldering-kit/CaseRight.jpeg)
 
 Finally, to remove components so I can get at those pesky PCB's and to keep components in a semi-safe area, I have a small Husky phillips screwdriver and a small silicon soldering mat with areas to hold and organize screws. I don't remember where I got the soldering mat. I believe it came with some random component kit or something. There are plenty of options online. I am thinking of grabbing the LTT precision screwdriver to replace the cheap Husky. I am not sure if it will fit though. One day I'll see and have to update this post as my kit changes.
 
