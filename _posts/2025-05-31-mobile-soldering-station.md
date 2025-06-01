@@ -28,6 +28,8 @@ My portable soldering kit consists of the following:
 - Husky small philips screwdriver (Plan to upgrade to LTT precision screwdriver)
 - Small soldering mat that I don't remember where it came from
 
+![](/images/posts/soldering-kit/AllItems.jpeg)
+
 ## Inventory
 Starting off we have the pencil case that contains everything above. I tried out various cases, some hard shell and some soft, but this one ended up having the perfect amount of elastic loops, pockets, and larger zippered areas. It holds everything I need except the power bank. Even then, I am pretty sure if I re-arranged or didn't use the magnifier glasses I could just shove the bank in the main compartment. 
 ![Vocuer pencil case](/images/posts/soldering-kit/PencilCase.png)
