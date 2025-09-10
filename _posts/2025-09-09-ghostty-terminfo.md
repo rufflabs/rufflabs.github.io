@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  'Fixing keybindings with GhosTTY and remote Linux hosts'
+title:  'Fixing keybindings with Ghostty and remote Linux hosts'
 categories: 
 image: 
 permalink: 
 ---
 
-I've recently switched to GhosTTY for my primary terminal on macOS and have ran into the issue of missing xterminfo definitions when SSH'ing to remote Linux systems. The following commands copies over the working xterminfo to the remote system. In particular, I often run into this with Kali Linux.
+I've recently switched to Ghostty for my primary terminal on macOS and have ran into the issue of missing xterminfo definitions when SSH'ing to remote Linux systems. The following commands copies over the working xterminfo to the remote system. In particular, I often run into this with Kali Linux.
 
 First install the xterminfo to the Kali user:
 ```
